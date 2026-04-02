@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe dayo</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+  
+
+</head>
+
+<body>
+
+<header>
+ <div class="header-inner">
+    <div class="logo">Cafe dayo</div>
+
+    <!-- ハンバーガーボタン -->
+    <div class="menu-btn" id="menu-btn">
+      ☰
+    </div>
+  </div>
+
+  <!-- メニュー -->
+ <nav class="nav" id="nav">
+  <a href="index.html">TOP</a>
+  <a href="about.html">店舗について</a>
+  <a href="menu.html">メニュー</a>
+  <a href="accese.html">アクセス</a>
+  <a href="contact.html">お問い合わせ</a>
+</nav>
+<script>
+const btn = document.getElementById("menu-btn");
+const nav = document.getElementById("nav");
+
+btn.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});
+</script>
+</header>
+
+
+
+<section>
+    <nav class="breadcrumb">
+  <a href="index.html">トップ</a> ＞ 
+  <span>店舗について</span>
+</nav>
+  <h2>Concept</h2>
+  <p style="text-align:center;">
+    ゆったりとした時間を楽しめる、ナチュラルで落ち着いた空間のカフェ。<br>
+    心地よい音楽とともに、特別なひとときをお過ごしください。
+  </p>
+</section>
+
+<section>
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085">
+    <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb">
+    <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814">
+  </div>
+</section>
+
+<footer>
+  © 2026 Cafe Lumière
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

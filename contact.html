@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe dayo</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+  
+
+</head>
+
+<body>
+
+<header>
+ <div class="header-inner">
+    <div class="logo">Cafe dayo</div>
+
+    <!-- ハンバーガーボタン -->
+    <div class="menu-btn" id="menu-btn">
+      ☰
+    </div>
+  </div>
+
+  
+  <!-- メニュー -->
+ <nav class="nav" id="nav">
+  <a href="index.html">TOP</a>
+  <a href="about.html">店舗について</a>
+  <a href="menu.html">メニュー</a>
+  <a href="accese.html">アクセス</a>
+  <a href="contact.html">お問い合わせ</a>
+</nav>
+<script>
+const btn = document.getElementById("menu-btn");
+const nav = document.getElementById("nav");
+
+btn.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});
+</script>
+</header>
+
+<section>
+    <nav class="breadcrumb">
+  <a href="index.html">トップ</a> ＞ 
+  <span>お問い合わせ</span>
+</nav>
+<form class="contact-form">
+  <label>お名前（任意）</label>
+  <input type="text">
+
+  <label>メールアドレス（任意）</label>
+  <input type="email">
+
+  <label>お問い合わせ内容（必須）</label>
+<textarea 
+  required 
+  oninvalid="this.setCustomValidity('お問い合わせ内容を入力してください')"
+  oninput="this.setCustomValidity('')">
+</textarea>
+  <button type="submit">送信</button>
+</form>
+</section>
+
+
+
+
+<footer>
+  © 2026 Cafe Lumière
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
