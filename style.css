@@ -45,7 +45,7 @@
 
     .hero {
       height: 80vh;
-      background: url("image/background.jpeg") center/cover;
+      background: url("background.jpeg") center/cover;
       display: flex;
       align-items: center;
       justify-content: center;
